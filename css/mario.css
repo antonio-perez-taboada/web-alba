@@ -1,0 +1,268 @@
+/* Mario Specific Styles */
+
+.mario-page {
+    background: linear-gradient(180deg, #FFF5E6 0%, #FFE5D9 100%);
+}
+
+.mario-hero {
+    background: linear-gradient(135deg, #FF6B6B 0%, #4ECDC4 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Destellos Animados */
+.sparkles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.sparkle {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: white;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    animation: twinkleSparkle 3s infinite ease-in-out;
+    opacity: 0;
+}
+
+.sparkle:nth-child(1) {
+    top: 20%;
+    left: 15%;
+    animation-delay: 0s;
+}
+
+.sparkle:nth-child(2) {
+    top: 40%;
+    left: 80%;
+    animation-delay: 0.6s;
+}
+
+.sparkle:nth-child(3) {
+    top: 60%;
+    left: 30%;
+    animation-delay: 1.2s;
+}
+
+.sparkle:nth-child(4) {
+    top: 75%;
+    left: 70%;
+    animation-delay: 1.8s;
+}
+
+.sparkle:nth-child(5) {
+    top: 30%;
+    left: 50%;
+    animation-delay: 2.4s;
+}
+
+@keyframes twinkleSparkle {
+    0%, 100% {
+        opacity: 0;
+        transform: scale(0) rotate(0deg);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.5) rotate(180deg);
+    }
+}
+
+.mario-hero .character-avatar {
+    animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Info Cards */
+.mario-page .info-card {
+    background: linear-gradient(135deg, #FF6B6B 0%, #FFE66D 100%);
+    border: 3px solid #4ECDC4;
+    transition: all 0.3s ease;
+}
+
+.mario-page .info-card:hover {
+    transform: translateY(-10px) rotate(2deg);
+    box-shadow: 0 15px 40px rgba(78, 205, 196, 0.4);
+}
+
+.mario-page .card-icon {
+    background: #4ECDC4;
+    color: white;
+}
+
+/* Habilidades */
+.habilidades {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%);
+    color: white;
+}
+
+.habilidades-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.habilidad-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    border: 2px solid rgba(255, 230, 109, 0.3);
+    transition: all 0.3s ease;
+}
+
+.habilidad-card:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: #FFE66D;
+    transform: scale(1.05);
+    box-shadow: 0 15px 40px rgba(255, 230, 109, 0.3);
+}
+
+.habilidad-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #FFE66D, #FFA500);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    box-shadow: 0 5px 20px rgba(255, 230, 109, 0.4);
+    animation: pulse 2s infinite;
+}
+
+.habilidad-icon i {
+    font-size: 2rem;
+    color: #FF6B6B;
+}
+
+.habilidad-card h3 {
+    font-family: 'Fredoka One', cursive;
+    margin-bottom: 1rem;
+    color: #FFE66D;
+}
+
+/* Aventuras Timeline */
+.aventuras {
+    padding: 80px 0;
+    background: white;
+}
+
+.aventuras-timeline {
+    max-width: 800px;
+    margin: 3rem auto;
+    position: relative;
+}
+
+.aventuras-timeline::before {
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: linear-gradient(180deg, #FF6B6B, #4ECDC4);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 3rem;
+    padding-left: 80px;
+    animation: slideInRight 0.6s ease-out;
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.timeline-marker {
+    position: absolute;
+    left: 18px;
+    top: 0;
+    width: 28px;
+    height: 28px;
+    background: linear-gradient(135deg, #FF6B6B, #4ECDC4);
+    border-radius: 50%;
+    border: 4px solid white;
+    box-shadow: 0 0 0 4px #e0e7ff;
+    z-index: 1;
+}
+
+.timeline-content {
+    background: linear-gradient(135deg, #FFF5E6 0%, #FFE5D9 100%);
+    padding: 1.5rem;
+    border-radius: 15px;
+    border: 3px solid #4ECDC4;
+    transition: all 0.3s ease;
+}
+
+.timeline-content:hover {
+    transform: translateX(10px);
+    box-shadow: 0 10px 30px rgba(78, 205, 196, 0.3);
+}
+
+.timeline-content h3 {
+    font-family: 'Fredoka One', cursive;
+    color: #FF6B6B;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-content p {
+    color: #64748b;
+}
+
+/* Curiosidades */
+.mario-page .fact-number {
+    background: linear-gradient(135deg, #FF6B6B, #4ECDC4);
+    color: white;
+}
+
+/* CTA Section */
+.mario-page .cta-section {
+    background: linear-gradient(135deg, #4ECDC4 0%, #FF6B6B 100%);
+}
+
+.mario-page .cta-btn {
+    background: #FFE66D;
+    color: #FF6B6B;
+    border: 3px solid white;
+}
+
+.mario-page .cta-btn:hover {
+    background: white;
+    transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .aventuras-timeline::before {
+        left: 15px;
+    }
+
+    .timeline-item {
+        padding-left: 50px;
+    }
+
+    .timeline-marker {
+        left: 5px;
+    }
+}
