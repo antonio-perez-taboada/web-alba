@@ -8,25 +8,25 @@ export default function Home() {
   const characters = [
     {
       name: 'Mario',
-      image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png',
+      image: 'https://i.imgur.com/5qzXHjf.png',
       description: 'El valiente fontanero héroe del Reino Champiñón',
       color: 'bg-red-500',
     },
     {
       name: 'Luigi',
-      image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/6.png',
+      image: 'https://i.imgur.com/DKw7XxD.png',
       description: 'El hermano de Mario, siempre listo para la aventura',
       color: 'bg-green-500',
     },
     {
       name: 'Princesa Peach',
-      image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/39.png',
+      image: 'https://i.imgur.com/ZdYCiGl.png',
       description: 'La amable gobernante del Reino Champiñón',
       color: 'bg-pink-500',
     },
     {
       name: 'Yoshi',
-      image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png',
+      image: 'https://i.imgur.com/W2gXB8t.png',
       description: 'El fiel compañero dinosaurio de Mario',
       color: 'bg-lime-500',
     },
