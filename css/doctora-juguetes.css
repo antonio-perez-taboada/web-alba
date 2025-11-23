@@ -1,0 +1,192 @@
+/* Doctora Juguetes Specific Styles */
+
+.doc-page {
+    background: linear-gradient(180deg, #FFE5F0 0%, #E5C5E5 100%);
+}
+
+.doc-hero {
+    background: linear-gradient(135deg, #FF69B4 0%, #9370DB 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Corazones Animados */
+.hearts-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.heart {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.3);
+    transform: rotate(45deg);
+    animation: floatHeart 10s infinite ease-in-out;
+}
+
+.heart::before,
+.heart::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+}
+
+.heart::before {
+    top: -20px;
+    left: 0;
+}
+
+.heart::after {
+    top: 0;
+    left: 20px;
+}
+
+.heart:nth-child(1) {
+    left: 10%;
+    top: 20%;
+    animation-delay: 0s;
+}
+
+.heart:nth-child(2) {
+    left: 70%;
+    top: 40%;
+    animation-delay: 2s;
+    width: 30px;
+    height: 30px;
+}
+
+.heart:nth-child(2)::before,
+.heart:nth-child(2)::after {
+    width: 30px;
+    height: 30px;
+}
+
+.heart:nth-child(3) {
+    left: 30%;
+    top: 60%;
+    animation-delay: 4s;
+    width: 50px;
+    height: 50px;
+}
+
+.heart:nth-child(3)::before,
+.heart:nth-child(3)::after {
+    width: 50px;
+    height: 50px;
+}
+
+.heart:nth-child(4) {
+    left: 85%;
+    top: 75%;
+    animation-delay: 1s;
+}
+
+@keyframes floatHeart {
+    0%, 100% {
+        transform: translateY(0) rotate(45deg) scale(1);
+        opacity: 0.5;
+    }
+    50% {
+        transform: translateY(-30px) rotate(65deg) scale(1.2);
+        opacity: 0.8;
+    }
+}
+
+.doc-hero .character-avatar {
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+/* Info Cards */
+.doc-page .info-card {
+    background: linear-gradient(135deg, #FF69B4 0%, #FFB6D9 100%);
+    border: 3px solid #9370DB;
+    transition: all 0.3s ease;
+}
+
+.doc-page .info-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(255, 105, 180, 0.4);
+}
+
+.doc-page .card-icon {
+    background: #9370DB;
+    color: white;
+}
+
+/* Health Lessons */
+.health-lessons {
+    padding: 80px 0;
+    background: white;
+}
+
+.lessons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.lesson-card {
+    background: linear-gradient(135deg, #FFE5F0 0%, #E5C5E5 100%);
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 3px solid transparent;
+}
+
+.lesson-card:hover {
+    border-color: #FF69B4;
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(255, 105, 180, 0.3);
+}
+
+.lesson-card i {
+    font-size: 3rem;
+    color: #FF69B4;
+    margin-bottom: 1rem;
+    animation: bounce 2s infinite;
+}
+
+.lesson-card h3 {
+    font-family: 'Fredoka One', cursive;
+    color: #9370DB;
+    margin-bottom: 1rem;
+}
+
+/* Curiosidades */
+.doc-page .fact-number {
+    background: linear-gradient(135deg, #FF69B4, #9370DB);
+    color: white;
+}
+
+/* CTA Section */
+.doc-page .cta-section {
+    background: linear-gradient(135deg, #9370DB 0%, #FF69B4 100%);
+}
+
+.doc-page .cta-btn {
+    background: white;
+    color: #FF69B4;
+    border: 3px solid #9370DB;
+}
+
+.doc-page .cta-btn:hover {
+    background: #FFE5F0;
+    transform: scale(1.1);
+}

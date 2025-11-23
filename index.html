@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web de Alba - Personajes Animados</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-star"></i>
+                <span>Alba's World</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Inicio</a></li>
+                <li><a href="#personajes" class="nav-link">Personajes</a></li>
+                <li><a href="#galeria" class="nav-link">Galería</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section con Parallax -->
+    <section id="home" class="hero-section">
+        <div class="parallax-bg">
+            <div class="parallax-layer layer-1">
+                <div class="floating-shape shape-1"></div>
+                <div class="floating-shape shape-2"></div>
+                <div class="floating-shape shape-3"></div>
+            </div>
+            <div class="parallax-layer layer-2">
+                <div class="stars"></div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title animate-fade-in">
+                Bienvenidos al Mundo de
+                <span class="gradient-text">Alba</span>
+            </h1>
+            <p class="hero-subtitle animate-slide-up">
+                Descubre el increíble universo de tus personajes favoritos
+            </p>
+            <a href="#personajes" class="cta-button animate-bounce">
+                <i class="fas fa-rocket"></i> Explorar Ahora
+            </a>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <p>Scroll</p>
+        </div>
+    </section>
+
+    <!-- Sección de Personajes -->
+    <section id="personajes" class="personajes-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-icon">✨</span>
+                Nuestros Personajes
+                <span class="title-icon">✨</span>
+            </h2>
+            <p class="section-subtitle">Conoce a los héroes más increíbles</p>
+
+            <div class="personajes-grid">
+                <!-- Bob Esponja -->
+                <div class="character-card" data-character="bob-esponja">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="card-bg bob-bg"></div>
+                            <div class="card-content">
+                                <div class="character-icon">
+                                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="20" y="30" width="60" height="60" rx="5" fill="#FFFF00" stroke="#000" stroke-width="2"/>
+                                        <circle cx="35" cy="50" r="8" fill="white"/>
+                                        <circle cx="65" cy="50" r="8" fill="white"/>
+                                        <circle cx="35" cy="50" r="4" fill="#0077BE"/>
+                                        <circle cx="65" cy="50" r="4" fill="#0077BE"/>
+                                        <path d="M 30 70 Q 50 80 70 70" stroke="#000" stroke-width="2" fill="none"/>
+                                        <rect x="30" y="25" width="40" height="10" rx="5" fill="#8B4513"/>
+                                    </svg>
+                                </div>
+                                <h3>Bob Esponja</h3>
+                                <p class="character-tagline">¡Siempre optimista!</p>
+                                <div class="card-stats">
+                                    <div class="stat">
+                                        <i class="fas fa-heart"></i>
+                                        <span>Alegría</span>
+                                    </div>
+                                    <div class="stat">
+                                        <i class="fas fa-star"></i>
+                                        <span>Popular</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-back bob-back">
+                            <h3>Bob Esponja</h3>
+                            <p>¡El esponja marina más feliz de Fondo de Bikini!</p>
+                            <ul class="character-features">
+                                <li><i class="fas fa-check"></i> Vive en una piña</li>
+                                <li><i class="fas fa-check"></i> Mejor amigo de Patricio</li>
+                                <li><i class="fas fa-check"></i> Chef del Crustáceo Cascarudo</li>
+                            </ul>
+                            <a href="pages/bob-esponja.html" class="explore-btn">
+                                Ver Más <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Doctora Juguetes -->
+                <div class="character-card" data-character="doctora-juguetes">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="card-bg doc-bg"></div>
+                            <div class="card-content">
+                                <div class="character-icon">
+                                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="50" cy="40" r="20" fill="#8B4513"/>
+                                        <circle cx="50" cy="60" r="25" fill="#FF69B4"/>
+                                        <circle cx="42" cy="38" r="3" fill="#000"/>
+                                        <circle cx="58" cy="38" r="3" fill="#000"/>
+                                        <path d="M 40 45 Q 50 48 60 45" stroke="#000" stroke-width="1.5" fill="none"/>
+                                        <rect x="35" y="75" width="8" height="20" fill="#9370DB"/>
+                                        <rect x="57" y="75" width="8" height="20" fill="#9370DB"/>
+                                        <circle cx="85" cy="30" r="8" fill="white" stroke="#FF69B4" stroke-width="2"/>
+                                        <line x1="85" y1="25" x2="85" y2="35" stroke="#FF69B4" stroke-width="2"/>
+                                        <line x1="80" y1="30" x2="90" y2="30" stroke="#FF69B4" stroke-width="2"/>
+                                    </svg>
+                                </div>
+                                <h3>Doctora Juguetes</h3>
+                                <p class="character-tagline">¡Cuidando juguetes!</p>
+                                <div class="card-stats">
+                                    <div class="stat">
+                                        <i class="fas fa-briefcase-medical"></i>
+                                        <span>Sanadora</span>
+                                    </div>
+                                    <div class="stat">
+                                        <i class="fas fa-heart"></i>
+                                        <span>Cariñosa</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-back doc-back">
+                            <h3>Doctora Juguetes</h3>
+                            <p>¡La mejor doctora para todos los juguetes!</p>
+                            <ul class="character-features">
+                                <li><i class="fas fa-check"></i> Estetoscopio mágico</li>
+                                <li><i class="fas fa-check"></i> Ayuda a todos</li>
+                                <li><i class="fas fa-check"></i> Enseña sobre salud</li>
+                            </ul>
+                            <a href="pages/doctora-juguetes.html" class="explore-btn">
+                                Ver Más <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Superman -->
+                <div class="character-card" data-character="superman">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="card-bg superman-bg"></div>
+                            <div class="card-content">
+                                <div class="character-icon">
+                                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M 30 30 L 50 10 L 70 30 L 65 50 L 70 70 L 50 90 L 30 70 L 35 50 Z" fill="#DC143C" stroke="#FFD700" stroke-width="2"/>
+                                        <path d="M 40 40 L 50 30 L 60 40 L 58 50 L 60 60 L 50 70 L 40 60 L 42 50 Z" fill="#FFD700"/>
+                                        <text x="50" y="58" font-size="25" font-weight="bold" text-anchor="middle" fill="#DC143C" font-family="Arial">S</text>
+                                        <rect x="45" y="75" width="10" height="20" fill="#0047AB"/>
+                                        <path d="M 35 30 L 45 25 L 55 25 L 65 30" fill="#DC143C"/>
+                                    </svg>
+                                </div>
+                                <h3>Superman</h3>
+                                <p class="character-tagline">¡El hombre de acero!</p>
+                                <div class="card-stats">
+                                    <div class="stat">
+                                        <i class="fas fa-bolt"></i>
+                                        <span>Súper Fuerte</span>
+                                    </div>
+                                    <div class="stat">
+                                        <i class="fas fa-shield-alt"></i>
+                                        <span>Héroe</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-back superman-back">
+                            <h3>Superman</h3>
+                            <p>¡El último hijo de Krypton protege la Tierra!</p>
+                            <ul class="character-features">
+                                <li><i class="fas fa-check"></i> Súper fuerza</li>
+                                <li><i class="fas fa-check"></i> Puede volar</li>
+                                <li><i class="fas fa-check"></i> Visión de calor</li>
+                            </ul>
+                            <a href="pages/superman.html" class="explore-btn">
+                                Ver Más <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mario -->
+                <div class="character-card" data-character="mario">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="card-bg mario-bg"></div>
+                            <div class="card-content">
+                                <div class="character-icon">
+                                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="50" cy="50" r="35" fill="#FF6B6B"/>
+                                        <circle cx="40" cy="45" r="5" fill="white"/>
+                                        <circle cx="60" cy="45" r="5" fill="white"/>
+                                        <circle cx="40" cy="45" r="2" fill="#000"/>
+                                        <circle cx="60" cy="45" r="2" fill="#000"/>
+                                        <path d="M 35 60 Q 50 70 65 60" stroke="#000" stroke-width="2" fill="none"/>
+                                        <path d="M 30 30 Q 35 20 40 25" stroke="#4ECDC4" stroke-width="3" fill="none"/>
+                                        <path d="M 70 30 Q 65 20 60 25" stroke="#4ECDC4" stroke-width="3" fill="none"/>
+                                        <circle cx="25" cy="50" r="8" fill="#FFE66D"/>
+                                        <circle cx="75" cy="50" r="8" fill="#FFE66D"/>
+                                    </svg>
+                                </div>
+                                <h3>Mario</h3>
+                                <p class="character-tagline">¡Aventuras épicas!</p>
+                                <div class="card-stats">
+                                    <div class="stat">
+                                        <i class="fas fa-magic"></i>
+                                        <span>Mágico</span>
+                                    </div>
+                                    <div class="stat">
+                                        <i class="fas fa-gamepad"></i>
+                                        <span>Divertido</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-back mario-back">
+                            <h3>Mario</h3>
+                            <p>¡El personaje más aventurero y divertido!</p>
+                            <ul class="character-features">
+                                <li><i class="fas fa-check"></i> Súper ágil</li>
+                                <li><i class="fas fa-check"></i> Resuelve misterios</li>
+                                <li><i class="fas fa-check"></i> Gran amigo</li>
+                            </ul>
+                            <a href="pages/mario.html" class="explore-btn">
+                                Ver Más <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería Parallax -->
+    <section id="galeria" class="galeria-section">
+        <div class="parallax-divider" data-speed="0.5">
+            <h2>Galería de Momentos Mágicos</h2>
+        </div>
+        <div class="container">
+            <div class="gallery-grid">
+                <div class="gallery-item" data-aos="zoom-in">
+                    <div class="gallery-image bob-gallery">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <p>Bob en Fondo de Bikini</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-delay="100">
+                    <div class="gallery-image doc-gallery">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <p>Doctora en acción</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-delay="200">
+                    <div class="gallery-image superman-gallery">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <p>Superman volando</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-delay="300">
+                    <div class="gallery-image mario-gallery">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <p>Mario aventurero</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="contacto-section">
+        <div class="container">
+            <h2 class="section-title">¡Contáctanos!</h2>
+            <p class="section-subtitle">Comparte tus historias favoritas</p>
+
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Tu nombre" required>
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Tu email" required>
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="form-group">
+                    <select required>
+                        <option value="">Personaje favorito</option>
+                        <option value="bob">Bob Esponja</option>
+                        <option value="doc">Doctora Juguetes</option>
+                        <option value="superman">Superman</option>
+                        <option value="mario">Mario</option>
+                    </select>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Tu mensaje" rows="5" required></textarea>
+                    <i class="fas fa-comment"></i>
+                </div>
+                <button type="submit" class="submit-btn">
+                    <span>Enviar Mensaje</span>
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-star"></i> Alba's World</h3>
+                    <p>Descubre el universo mágico de tus personajes favoritos</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#home">Inicio</a></li>
+                        <li><a href="#personajes">Personajes</a></li>
+                        <li><a href="#galeria">Galería</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Alba's World - Sitio educativo sin fines comerciales</p>
+                <p class="copyright-notice">Los personajes son propiedad de sus respectivos dueños</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Partículas flotantes -->
+    <div class="particles" id="particles"></div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
