@@ -1,4 +1,4 @@
-# README - Sitio Web de Personajes Animados
+# Web de Alba - Sitio Web de Personajes Animados
 
 ## Descripción del Proyecto
 
