@@ -17,7 +17,7 @@ export default function BobEsponja() {
               bottom: '-20px',
             }}
             animate={{
-              y: [-20, -window.innerHeight - 100],
+              y: [-20, -1200],
               x: [0, Math.random() * 100 - 50],
               scale: [0.5, 1, 0.5],
               opacity: [0.3, 0.8, 0],
