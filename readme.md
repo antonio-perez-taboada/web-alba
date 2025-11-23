@@ -2,7 +2,7 @@
 
 ## Descripción del Proyecto
 
-Este proyecto es un sitio web dedicado a personajes de series animadas y superhéroes, incluyendo secciones para Bob Esponja, la Doctora Juguetes, Superman y Jimario.
+Este proyecto es un sitio web dedicado a personajes de series animadas y superhéroes, incluyendo secciones para Bob Esponja, la Doctora Juguetes, Superman, Mario Bros y Mickey Mouse.
 
 ## Requisitos Previos
 
@@ -22,7 +22,8 @@ personajes-web/
 │   ├── bob-esponja.css     # Estilos específicos
 │   ├── doctora-juguetes.css
 │   ├── superman.css
-│   └── jimario.css
+│   ├── mario-bros.css
+│   └── mickey-mouse.css
 ├── js/
 │   ├── main.js             # Scripts principales
 │   └── personajes.js       # Funcionalidad de personajes
@@ -30,12 +31,14 @@ personajes-web/
 │   ├── bob-esponja/        # Imágenes del personaje
 │   ├── doctora-juguetes/
 │   ├── superman/
-│   └── jimario/
+│   ├── mario-bros/
+│   └── mickey-mouse/
 ├── pages/
 │   ├── bob-esponja.html
 │   ├── doctora-juguetes.html
 │   ├── superman.html
-│   └── jimario.html
+│   ├── mario-bros.html
+│   └── mickey-mouse.html
 └── README.md
 ```
 
@@ -59,11 +62,17 @@ personajes-web/
 - Historia y origen
 - Galería multimedia
 
-### 4. Jimario
+### 4. Mario Bros
 - Descripción del personaje
 - Aventuras destacadas
 - Características especiales
 - Contenido interactivo
+
+### 5. Mickey Mouse
+- Perfil del personaje icónico de Disney
+- Historia y evolución
+- Galería de imágenes clásicas
+- Curiosidades y datos interesantes
 
 ## Instalación
 
@@ -100,8 +109,16 @@ cd personajes-web
 - Azul: `#0047AB`
 - Amarillo: `#FFD700`
 
-### Jimario
-- [Define colores según las características del personaje]
+### Mario Bros
+- Rojo: `#E52521`
+- Azul: `#049CD8`
+- Amarillo: `#FBD000`
+
+### Mickey Mouse
+- Negro: `#000000`
+- Rojo: `#FF0000`
+- Amarillo: `#FFE302`
+- Blanco: `#FFFFFF`
 
 ## Desarrollo
 
